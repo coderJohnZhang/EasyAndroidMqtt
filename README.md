@@ -18,6 +18,43 @@ This is a more user-friendly Android MQTT Client library based on Eclipse Paho A
 - Welcome to issue.
 
 
+## How to use
+[![](https://jitpack.io/v/coderJohnZhang/EasyAndroidMqtt.svg)](https://jitpack.io/#coderJohnZhang/EasyAndroidMqtt)
+
+Step 1. Add the JitPack repository to your root build.gradle at the end of repositories.
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Step 2. Add the dependency.
+```gradle
+dependencies {
+	implementation 'com.github.coderJohnZhang:EasyAndroidMqtt:1.0.1'
+}
+```
+
+Step 3. Add the following permissions to AndroidManifest.xml in the app.
+```xml
+<!-- Permissions the MQTT Requires -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+```
+
+Step 4. Registering Android MQTT service.
+```xml
+<!-- Mqtt Service -->
+<service android:name="com.zhangjun.mqtt.android.service.MqttService" />
+```
+
+
 ## About me
 
 Email: coder.john.cheung@gmail.com<br><br>

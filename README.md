@@ -35,7 +35,7 @@ allprojects {
 Step 2. Add the dependency.
 ```gradle
 dependencies {
-	implementation 'com.github.coderJohnZhang:EasyAndroidMqtt:1.0.1'
+    implementation 'com.github.coderJohnZhang:EasyAndroidMqtt:1.0.1'
 }
 ```
 
